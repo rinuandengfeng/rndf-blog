@@ -67,17 +67,17 @@ jobs:
         with:
           path: ./public
 
-      - name: Algolia Index Uploader
-        uses: rxrw/algolia-index-uploader@v1
-        with:
-          # Your Algolia IndexPath
-          index_path: public/index.json   
-          # Algolia Index Id
-          algolia_index_id:  D6TRJGY2K0
-          # Algolia Index Name
-          algolia_index_name: rndf-blog 
-          # Algolia Admin Key
-          algolia_index_admin_key: 5b81a8773698d639fba17fac0be45846
+      # - name: Algolia Index Uploader
+      #   uses: rxrw/algolia-index-uploader@v1
+      #   with:
+      #     # Your Algolia IndexPath
+      #     index_path: public/index.json   
+      #     # Algolia Index Id
+      #     algolia_index_id:  D6TRJGY2K0
+      #     # Algolia Index Name
+      #     algolia_index_name: rndf-blog 
+      #     # Algolia Admin Key
+      #     algolia_index_admin_key: 5b81a8773698d639fba17fac0be45846
 
           
 

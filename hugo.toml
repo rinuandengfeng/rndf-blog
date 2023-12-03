@@ -1,0 +1,338 @@
+# baseURL = 'http://example.org/'
+baseURL = "https://www.rndf.me"
+languageCode = 'zh-CN'
+title = "rndf's blog"
+
+#主题
+theme = "LoveIt"
+# 设置默认的语言 ["en", "zh-cn", "fr", "pl", ...]
+defaultContentLanguage = "zh-cn"
+
+# 设置时区
+timeZone = "Asia/Shanghai"
+
+# 默认每页列表显示的文章数目
+paginate = 10
+
+# 是否使用 emoji 代码
+enableEmoji = true
+
+# 字数统计
+hasCJKLanguage = true
+
+# 版权描述，仅仅用于 SEO
+copyright = ""
+
+# 作者配置
+[author]
+name = "日暖等风"
+email = "1061747240@qq.com"
+link = ""
+
+# 菜单配置
+[menu]
+[[menu.main]]
+weight = 1
+identifier = "home"
+pre = "🏠"
+post = ""
+name = "主页"
+url = "/"
+title = "主页"
+
+[[menu.main]]
+weight = 2
+identifier = "文章"
+# 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
+pre = "👨🏻"
+# 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
+post = ""
+name = "文章"
+url = "/posts/"
+# 当您将鼠标悬停在此菜单链接上时, 将显示标题
+title = ""
+
+[[menu.main]]
+weight = 3
+identifier = "tags"
+pre = "🧩"
+post = ""
+name = "分类"
+url = "/tags/"
+title = ""
+
+[[menu.main]]
+weight = 4
+identifier = "categories"
+pre = "📚"
+post = ""
+name = "归档"
+url = "/categories"
+title = "归档"
+
+
+[[menu.main]]
+weight = 4
+identifier = "life"
+pre = " 🏖"
+post = ""
+name = "生活"
+url = "/posts/life"
+title = "生活"
+
+# [[menu.main]]
+# weight = 6
+# identifier = "about"
+# pre = "🙋🏻‍♂️"
+# post = ""
+# name = "关于"
+# url = "/about/"
+
+
+[taxonomies]
+category = "categories"
+# 标签页面的类型
+tag = "tags"
+search = "search"
+
+# 主题配置
+[params]
+# 网站默认主题 ["auto", "light", "dark"]
+defaultTheme = "auto"
+dateFormat = "2006-01-02"
+# 页面头部导航栏配置
+[params.header]
+# 桌面端导航栏模式 ["fixed", "normal", "auto"]
+desktopMode = "auto"
+# 移动端导航栏模式 ["fixed", "normal", "auto"]
+mobileMode = "auto"
+
+# 页面头部导航栏标题配置
+[params.header.title]
+# 网站标题
+name = "日暖等风"
+# 网站标题链接
+url = "/"
+# 网站标题图标
+icon = "favicon.ico"
+# 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
+pre = "<i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i>"
+# 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
+post = ""
+# 是否为标题显示打字机动画
+typeit = true
+
+
+# 页面底部信息配置
+[params.footer]
+enable = true
+# 自定义内容 (支持 HTML 格式)
+custom = ""
+# 是否显示 Hugo 和主题信息
+hugo = false
+# 是否显示版权信息
+copyright = true
+# 是否显示作者
+author = true
+# 网站创立年份
+since = 2023
+# ICP 备案信息，仅在中国使用 (支持 HTML 格式)
+icp = ""
+
+# Section (所有文章) 页面配置
+[params.section]
+# section 页面每页显示文章数量
+paginate = 10
+
+# 日期格式 (月和日)
+dateFormat = "01-02"
+
+# List (目录或标签) 页面配置
+[params.list]
+# list 页面每页显示文章数量
+paginate = 10
+dateFormat = "01-02"
+# 是否显示文章摘要
+summary = true
+# 是否显示文章标签
+tags = true
+
+# 搜索配置
+[params.search]
+enable = true
+# 搜索引擎的类型 ["lunr", "algolia"]
+type = "algolia"
+# 文章内容最长索引长度
+contentLength = 4000
+# 搜索框的占位提示语
+placeholder = "请输入搜索的关键词..."
+# 最大结果数目
+maxResultLength = 10
+# 结果内容片段长度
+snippetLength = 30
+# 是否在搜索索引中使用基于 baseURL 的绝对路径
+absoluteURL = false
+[params.search.algolia]
+index = ""
+appID = ""
+searchKey = ""
+
+# 应用图标配置
+[params.app]
+# 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
+title = "日暖等风"
+# 是否隐藏网站图标资源链接
+noFavicon = false
+# 当添加到 iOS 主屏幕或者 Android 启动器时的图标, 覆盖默认图标
+icon = "favicon.ico"
+# 当添加到 iOS 主屏幕或者 Android 启动器时的背景颜色, 覆盖默认颜色
+color = "#ffffff"
+# Android 浏览器主题色
+themeColor = "#ffffff"
+# Safari 图标颜色
+iconColor = "#5bbad5"
+# Windows v8-11 磁贴颜色
+tileColor = "#da532c"
+
+# 主页信息设置
+[params.home]
+# 主页个人信息
+[params.home.profile]
+enable = true
+# 主页显示头像的 URL
+avatarURL = "android-chrome-512x512.png"
+# 主页显示的网站标题 (支持 HTML 格式)
+title = "日暖等风"
+# 主页显示的网站副标题 (允许 HTML 格式)
+subtitle = "不积跬步，无以至千里!"
+# 是否为副标题显示打字机动画
+typeit = true
+# 是否显示社交账号
+social = true
+# 主页文章列表
+[params.home.posts]
+enable = true
+# 主页每页显示文章数量
+paginate = 6
+
+# 主页的社交信息设置
+[params.social]
+GitHub = "rinuandengfeng"
+email = "1061747240@qq.com"
+
+
+# 文章页面全局配置
+[params.page]
+# 是否使用 twemoji
+twemoji = true
+# 是否使用 lightgallery
+# lightgallery = true
+# 是否显示原始 Markdown 文档内容的链接
+linkToMarkdown = true
+
+
+# 文章页面的标题配置
+[params.page.title]
+# 是否显示文章标题
+enable = true
+# 是否显示文章标题的分类
+category = true
+# 是否显示文章标题的标签
+tags = true
+# 是否显示文章标题的日期
+date = true
+# 是否显示文章标题的作者
+author = true
+# 是否显示文章标题的阅读时长
+readingTime = true
+# 是否显示文章标题的字数
+words = true
+# 是否显示文章标题的评论数
+comments = true
+
+# 文章页面的底部配置
+[params.page.footer]
+#更新时间格式
+# dateFormat = "2006-01-02"
+next = true
+pre = true
+
+
+# 目录配置
+[params.page.toc]
+# 是否使用目录
+enable = true
+# 是否保持使用文章前面的静态目录
+keepStatic = false
+# 是否使侧边目录自动折叠展开
+auto = true
+# 是否在侧边目录中显示标题
+showTitle = true
+
+
+# 代码配置
+[params.page.code]
+# 是否显示代码块的复制按钮
+copy = true
+# 默认展开显示的代码行数
+maxShownLines = 50
+# 代码高亮主题
+theme = "github"
+# 代码高亮主题的样式
+themeStyle = "monokai"
+# 是否显示行号
+lineNums = true
+# 是否显示行号的区域
+lineNumsStyle = "table"
+
+
+# 评论系统设置
+[params.page.comment]
+enable = true
+# giscus comment 评论系统设置 (https://giscus.app/zh-CN)
+[params.page.comment.giscus]
+# 你可以参考官方文档来使用下列配置
+enable = true
+repo = "rinuandengfeng/rinuandengfeng.github.io"
+repoId = "R_kgDOJx2X7Q"
+category = "Announcements"
+categoryId = "DIC_kwDOJx2X7c4CbVcp"
+# 为空时自动适配当前主题 i18n 配置
+lang = "zh-CN"
+mapping = "pathname"
+reactionsEnabled = "1"
+emitMetadata = "0"
+inputPosition = "bottom"
+lazyLoading = true
+lightTheme = "light"
+darkTheme = "dark"
+
+
+# 文章页面的分享信息设置
+[params.page.share]
+enable = false
+
+
+# TypeIt 配置
+[params.typeit]
+# 每一步的打字速度 (单位是毫秒)
+speed = 100
+# 光标的闪烁速度 (单位是毫秒)
+cursorSpeed = 1000
+# 光标的字符 (支持 HTML 格式)
+cursorChar = "|"
+# 打字结束之后光标的持续时间 (单位是毫秒, "-1" 代表无限大)
+duration = -1
+
+
+# 配置文章日期
+[frontmatter]
+date = ['date', 'pubdate', 'lastmod', 'modified']
+lastmod = ['lastmod', 'modified', 'date', 'pubdate']
+publishDate = ['pubdate', 'date']
+
+# 配置404页面
+[[redirects]]
+from = '/**'
+status = 404
+to = '/404.html'

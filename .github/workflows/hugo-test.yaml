@@ -21,10 +21,10 @@ jobs:
         with:
           hugo-version: "0.62.0 "
           # 是否启用 hugo extend
-          extended: false
+          extended: true
 
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --config hugo.toml
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
